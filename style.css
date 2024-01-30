@@ -8,8 +8,10 @@
 :root {
     --light-aqua: rgb(220, 242, 241);
     --soft-blue: rgb(127, 199, 217);
+    --light-gray: rgb(247, 247, 247);
     --dark-indigo: rgb(54, 84, 134);
     --midnight-blue: rgb(15, 16, 53);
+    --font-color: rgb(255, 255, 255);
 }  
 .navbar{
     background: #fff;
@@ -99,4 +101,39 @@
   /* button click effect*/
   .Btn:active {
     transform: translate(2px ,2px);
+  }
+
+  .main-container{
+    padding: 20px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+/* --------------- left-sidebar ----------------- */
+.left-side{
+  flex-basis: 20%;
+  align-self: flex-start;
+  background-color: var(--light-gray);
+  padding: 10px;
+  border-radius: 10px;
+}
+.left-side-main-first{
+  background-image: linear-gradient(to right bottom, #5699f3, #6aa5f2, #7db1f1, #91bdef, #a6c8ed);
+  padding: 3%;
+  border-radius: 10px;
+}
+.left-side-main-first .first-contact{
+  color: var(--font-color);
+  border: 1px solid #fff;
+  border-radius: 15px;
+  width: 145px;
+  padding: 4px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+  .right-side{
+
   }

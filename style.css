@@ -112,7 +112,7 @@
 
 /* --------------- left-sidebar ----------------- */
 .left-side{
-  flex-basis: 20%;
+  flex-basis: 28%;
   align-self: flex-start;
   background-color: var(--light-gray);
   padding: 10px;
@@ -133,7 +133,44 @@
   font-size: 15px;
   font-weight: 500;
 }
+.left-side-user{
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.left-side-user img{
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.left-side-user p{
+  color: var(--font-color);
+  font-size: larger;
+  font-weight: 600;
+}
+.left-side-contact-details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  color: var(--font-color);
+  font-weight: 500;
+}
+.left-side-contact-details span{
 
+}
+.left-side-contact-details img{
+  width: 30px;
+  border-radius: 2px;
+}
+.number-timer{
+  display: flex;
+}
+.number-timer p{
+  color: var(--font-color);
+  display: flex;
+  font-weight: var(--font-color);
+}
   .right-side{
 
   }

@@ -215,7 +215,7 @@
 }
 .left-side-main-second img{
   width: 40px;
-  background: #ffffff;
+  background: #f2f1f8;
   padding: 10px;
   border-radius: 50%;
   object-fit: contain;
@@ -234,7 +234,8 @@
   color: #504a4a;
 }
 .left-side-main-second .hangup{
-  width: 80px;
+  width: 70px;
+  background: #fff;
 }
 .hangup-btn{
   grid-column: 2 / 3;

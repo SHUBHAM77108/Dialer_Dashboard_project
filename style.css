@@ -122,10 +122,10 @@
 
 #label-input {
   transition: all 0.1s ease-in-out;
-  color: #000;
+  color: transparent;
   position: absolute;
-  top: 30%;
-  left: 10px;
+  /* top: 2%; */
+  left: 35px;
   transform: scale(0.95);
   opacity: 1;
   pointer-events: none;
@@ -138,7 +138,7 @@
 
 #input:focus ~ label#label-input,
 #input:not(:placeholder-shown) ~ #label-input {
-  top: -20% !important;
+  top: -35% !important;
   left: 2px !important;
   transform: scale(0.8);
   background: rgb(228,237,250);
@@ -149,13 +149,13 @@
 }
 
 #input {
-  transition: outline 0.2s ease;
-  font-size: 1rem;
+  font-size: 14px;
   outline-color: var(--button-text);
   outline: unset;
   border: 1px solid #bbbbbb;
-  padding: 7px 0px 7px 7px;
-  width: 70%;
+  padding: 10px 0px 7px 44px;
+  width: 80%;
+  letter-spacing: 1px;
 }
 
 /* #input:focus {
@@ -168,16 +168,26 @@
 .dail-number{
   width: 36px;
   position: absolute;
-  left: 177px;
+  right: 62px;
   padding: 9px 0px;
   display: flex;
   top: 1px;
   justify-content: center;
   border: none;
   border-radius: 0px 5px 5px 0px;
+  background-image: linear-gradient(to right bottom, #5699f3, #6aa5f2, #7db1f1, #91bdef, #a6c8ed);
+}
+.country-code{
+  position: absolute;
+  top: 23%;
+  padding: 0px 7px 0px 4px;
+  border-right: 1px solid #e5e7eb;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 .dail-number img{
-  width: 20px;
+  width: 19px;
 }
 .next-number-btn{
   width: 10px;

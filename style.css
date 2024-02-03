@@ -165,7 +165,7 @@
 .relative {
   position: relative;
 }
-.dail-number{
+.phone-no-input-box{
   width: 36px;
   position: absolute;
   right: 62px;
@@ -186,7 +186,7 @@
   font-weight: 400;
   letter-spacing: 1px;
 }
-.dail-number img{
+.phone-no-input-box img{
   width: 19px;
 }
 .next-number-btn{

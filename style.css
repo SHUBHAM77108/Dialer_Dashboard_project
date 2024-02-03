@@ -119,12 +119,82 @@
   padding: 10px;
   border-radius: 10px;
 }
+
+#label-input {
+  transition: all 0.1s ease-in-out;
+  color: #000;
+  position: absolute;
+  top: 30%;
+  left: 10px;
+  transform: scale(0.95);
+  opacity: 1;
+  pointer-events: none;
+  font-size: 15px;
+}
+
+.input-base {
+  border-radius: 5px;
+}
+
+#input:focus ~ label#label-input,
+#input:not(:placeholder-shown) ~ #label-input {
+  top: -20% !important;
+  left: 2px !important;
+  transform: scale(0.8);
+  background: rgb(228,237,250);
+  background: linear-gradient(180deg, rgba(228,237,250,1) 10%, rgba(255,255,255,1) 15%); 
+  color: black;
+  padding: 0 6px;
+  opacity: 1;
+}
+
+#input {
+  transition: outline 0.2s ease;
+  font-size: 1rem;
+  outline-color: var(--button-text);
+  outline: unset;
+  border: 1px solid #bbbbbb;
+  padding: 7px 0px 7px 7px;
+  width: 70%;
+}
+
+/* #input:focus {
+  box-shadow: 0 0 0 1px #e8e8e8, 0 0 0 3px hsl(216, 5%, 60%);
+} */
+
+.relative {
+  position: relative;
+}
+.dail-number{
+  width: 36px;
+  position: absolute;
+  left: 177px;
+  padding: 9px 0px;
+  display: flex;
+  top: 1px;
+  justify-content: center;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+}
+.dail-number img{
+  width: 20px;
+}
+.next-number-btn{
+  width: 10px;
+}
+
+.contact-fild{
+  background: #e4edfa;
+  padding: 10px;
+  margin-bottom: 6px;
+  border-radius: 15px;
+}
 .left-side-main-first{
   background-image: linear-gradient(to right bottom, #5699f3, #6aa5f2, #7db1f1, #91bdef, #a6c8ed);
   padding: 2%;
   border-radius: 10px;
 }
-.left-side-main-first .first-contact{
+/* .left-side-main-first .first-contact{
   color: var(--font-color);
   border: 1px solid #fff;
   border-radius: 15px;
@@ -133,7 +203,7 @@
   text-align: center;
   font-size: 15px;
   font-weight: 500;
-}
+} */
 .left-side-user{
   display: flex;
   align-items: center;
@@ -233,13 +303,15 @@
   font-size: 10px;
   color: #504a4a;
 }
-.left-side-main-second .hangup{
-  width: 70px;
+.hangup{
+  width: 55px;
   background: #fff;
+  border-radius: 50%;
 }
 .hangup-btn{
-  grid-column: 2 / 3;
-  padding-top: 15px;
+  display: flex;
+  padding-top: 30px;
+  justify-content: center;
 }
   .right-side{
 

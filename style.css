@@ -105,7 +105,7 @@
   }
 
   .main-container{
-    padding: 20px 5%;
+    padding: 20px 1%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -113,8 +113,8 @@
 
 /* --------------- left-sidebar ----------------- */
 .left-side{
-  flex-basis: 25%;
-  min-width: 25%;
+  flex-basis: 21%;
+  min-width: 21%;
   align-self: flex-start;
   background-color: #efededb0;
   padding: 10px;
@@ -171,7 +171,7 @@
 .phone-no-input-box{
   width: 36px;
   position: absolute;
-  right: 62px;
+  right: 56px;
   padding: 9px 0px;
   display: flex;
   top: 1px;
@@ -347,5 +347,6 @@
   justify-content: center;
 }
   .right-side{
-
+    flex-basis: 75%;
+    background: #e1e1e1;
   }
